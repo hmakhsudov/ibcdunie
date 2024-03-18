@@ -12,7 +12,11 @@ services:
       - "8000:8000"
     depends_on:
       - redis
-
+  bot:
+    build:
+      context: .
+      dockerfile: ./bot/Dockerfile
+    container_name: bot_container
   nginx:
     build: ./nginx
     volumes:
