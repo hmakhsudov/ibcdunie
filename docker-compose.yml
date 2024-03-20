@@ -10,8 +10,7 @@ services:
       context: .
     ports:
       - "8000:8000"
-    depends_on:
-      - redis
+
   bot:
     build:
       context: .
@@ -29,10 +28,7 @@ services:
     depends_on:
       - django_gunicorn
 
-  redis:
-    image: "redis:latest"
-    ports:
-      - "6379:6379"
+
 
 volumes:
   static:
