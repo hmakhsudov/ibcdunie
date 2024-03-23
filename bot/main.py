@@ -119,9 +119,9 @@ def handle_tools(message_or_query):
         chat_id = message_or_query.chat.id
     elif isinstance(message_or_query, telebot.types.CallbackQuery):
         chat_id = message_or_query.message.chat.id
-    text = "<b>Контактные данные</b>\n\nТелефон: +7 909 964 01 23\n<a href='https://t.me/conso27'>Telegram</a>\n<a href='https://vk.com/dunie'>ВК</a>\n<a href='https://dunie.press'>Сайт Дуние</a>\n<a href='https://www.youtube.com/@Dunie-2024'>Youtube</a>\nEmail: 7928117@mail.ru"
+    text = "<b>Контактные данные</b>\n\nТелефон: +7 909 964 01 23\n<a href='https://t.me/conso27'>Telegram</a>\n<a href='https://vk.com/dunie'>ВК</a>\n<a href='https://dunie.press'>Сайт Дуние</a>\n<a href='https://www.youtube.com/@Dunie-2024'>Youtube</a>\n<a href='https://vc.ru/u/2959417-press-sluzhba-mbk-dunie'>VC.ru</a>\n<a href='https://mbkdunie.livejournal.com/profile/'>LiveJournal</a>\n<a href='https://dzen.ru/id/65d73d810feeaa2ff60f0260?utm_referrer=telegra.ph'>Яндекс дзен</a>\n<a href='mailto:adamadalzhol@gmail.com'>Email: adamadalzhol@gmail.com</a>\nEmail: 7928117@mail.ru"
     bot.send_message(chat_id, text, parse_mode="HTML", reply_markup=markup)
-    time.sleep(3)
+    # time.sleep(3)
 
 
 # Обработчик для кнопки "Юридический Каркас"
