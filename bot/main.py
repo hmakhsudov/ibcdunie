@@ -1,6 +1,8 @@
 import telebot
 from telebot import types
 import time
+import schedule
+
 BOT_TOKEN = "6910054215:AAHEUpxHVOcVInq-EUoqo231cnrc9cpC9_s"
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -8,27 +10,48 @@ markup = types.InlineKeyboardMarkup(row_width=2)
 itembtn1 = types.InlineKeyboardButton('О нас', callback_data='about_dunie')
 itembtn2 = types.InlineKeyboardButton('Принципы и ценности', callback_data='core_values')
 itembtn3 = types.InlineKeyboardButton('Наши инструменты', callback_data='our_tools')
-itembtn4 = types.InlineKeyboardButton('Перспективы', callback_data='perspectives')
 itembtn5 = types.InlineKeyboardButton('Будущее Дуние', callback_data='future_of_dunie')
 itembtn6 = types.InlineKeyboardButton('Контактные данные', callback_data='contact_info')
-itembtn7 = types.InlineKeyboardButton('Юридический Каркас', callback_data='legal_framework')
-
-markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6, itembtn7)
 
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
+    global user_id
+    user_id = message.chat.id
     # Приветственное сообщение
-    text = "<b>Привет!</b>\nВас приветствует команда <b>Международной группы компаний Адам Адал Жол и МБК Дуние</b>\n\nЗдесь вы сможете ознакомиться с продуктами, идеями и ценностями, которые транслирует и предоставляет наша группа компаний!"
-    photo_path = "images/hello_photo.jpg"
-    with open(photo_path, 'rb') as photo:
-        bot.send_photo(message.chat.id, photo, caption=text, parse_mode='HTML')
+    text_hello = "<b>Привет!</b>\nВас приветствует команда <b>Международной группы компаний Адам Адал Жол и МБК Дуние</b>\n\nЗдесь вы сможете ознакомиться с продуктами, идеями и ценностями, которые транслирует и предоставляет наша группа компаний!"
+    photo_path_hello = "images/hello_photo.jpg"
+    with open(photo_path_hello, 'rb') as photo:
+        bot.send_photo(message.chat.id, photo, caption=text_hello, parse_mode='HTML')
+    time.sleep(5)
+        
+    text_about = "<b>Первое позитивное планетарное движение</b>\n\nМБК «ДУНИЕ» является международной некоммерческой, членской, благотворительной организацией, созданной на добровольном объединении граждан, физических и/или юридических лиц на ОСНОВЕ чистоты, равенства, сохранности и защиты все вся всех всего, живых и не живых, всего человечества, животного мира, экологического оздоровления жизни и планеты, Благо-творения, Благо-человечности, Благо-человеческой семьи, Благо-живым и не живым, Благо-справедливости и всеобщего мира, Благо-созидательности, содействия и осуществления взаимодействия человечества, граждан, народов, населения, нации, всех государств и не государств, республик и не республик, монархии и не монархии, религиозных и не религиозных, конфессий и не конфессий, государственных и не государственных, сообществ, членств, организаций."
+    photo_path_about = "images/about_dunie.jpg"
+    with open(photo_path_about, 'rb') as photo:
+        bot.send_photo(message.chat.id, photo, caption=text_about, parse_mode='HTML')
 
-    # Создаем блок навигации с кнопками
+    time.sleep(8)
+    text_principles = '''<b>Солидарность</b>\n\nМы верим в солидарность и взаимопомощь, в общую ответственность перед будущим поколением и нашей планетой.\n\n<b>Справедливость</b>\n\nМы стремимся к созданию справедливого общества, где люди не будут ограничены неравенством, дискриминацией и эксплуатацией.\n\n<b>Инновации</b>\n\nМы ищем новые идеи и решения, чтобы преобразовать системы и процессы в более прорывные ноосферные, природоподобные, экологически устойчивые.\n\n<b>Исключим из жизни</b> \n\nБоль, страх, искажения. Имеем решения как прекратить войны, болезни, снять все долговое бремя кредитов по планете, как с государств, так и с человека.'''
+    photo_path_principles = 'images/principles.jpg'
+    
+    with open(photo_path_principles, 'rb') as photo:
+        bot.send_photo(message.chat.id, photo, caption=text_principles, parse_mode='HTML')
 
-
-    # Отправляем блок навигации
-    bot.send_message(message.chat.id, "Выберите интересующий вас раздел:", reply_markup=markup)
+    time.sleep(8)
+    text_tools = "<b>CVB</b>\n\n🚀«Converted Virtual Balance» или «Конвертируемый Виртуальный Баланс»"
+    bot.send_message(message.chat.id, text_tools, parse_mode="HTML")
+    time.sleep(3)
+    text_tools = "Что такое CVB и что он дает для всех всё вся всего, народа, человечества, государства, бизнеса и Вас самих?"
+    bot.send_message(message.chat.id, text_tools, parse_mode="HTML")
+    time.sleep(3)
+    text_tools2 = "«Converted Virtual Balance» -«Конвертируемый  виртуальный баланс» CVB - это программное обеспечение для персонального компьютера и мобильное приложение для любого гаджета, которое дает возможность: \n\n• конвертировать любую валюту мира без\n\nпривязки к любой бирже, любому кросс курсу ;\n\n• отправлять деньги в любую точку мира засекунды и получать их;\n\n• осуществлять куплю-продажу любыхтоваров и услуг по всему миру;\n\n• хранить свои сбережения, зарплату,пенсию без каких-либо финансовых потерь из-за обменных курсов."
+    markup_tools = types.InlineKeyboardMarkup(row_width=2)
+    tools_btn1 = types.InlineKeyboardButton("Преимущества", callback_data="cvb_advantages")
+    tools_btn2 = types.InlineKeyboardButton("Польза", callback_data="cvb_benefits")
+    tools_btn3 = types.InlineKeyboardButton("Узнать подробнее про CVB", url="https://telegra.ph/CHto-takoe-Konvertiruemyj-virtualnyj-balans--CVB-03-09")
+    # tools_btn4 = types.InlineKeyboardButton("Назад ◀️", url="")
+    markup_tools.add(tools_btn1, tools_btn2, tools_btn3)
+    bot.send_message(message.chat.id, text_tools2, reply_markup=markup_tools)
 
 @bot.message_handler(commands=['about'])
 @bot.callback_query_handler(func=lambda call: call.data == 'about_dunie')
@@ -43,7 +66,7 @@ def handle_about(message_or_query):
     photo_path = "images/about_dunie.jpg"
 
     with open(photo_path, 'rb') as photo:
-        bot.send_photo(chat_id, photo, caption=text, parse_mode='HTML', reply_markup=markup)
+        bot.send_photo(chat_id, photo, caption=text, parse_mode='HTML')
 
 
 
@@ -91,7 +114,7 @@ def perspectives(message_or_query):
     photo_path = 'images/perspectives.jpg'
     
     with open(photo_path, 'rb') as photo:
-        bot.send_photo(chat_id, photo, caption=text, parse_mode='HTML', reply_markup=markup)
+        bot.send_photo(chat_id, photo, caption=text, parse_mode='HTML')
 
 
 # Обработчик для кнопки "Будущее позитивного планетарного движения"
@@ -106,7 +129,7 @@ def handle_tools(message_or_query):
     photo_path = "images/future.jpg"
     
     with open(photo_path, 'rb') as photo:
-        bot.send_photo(chat_id, photo, caption=text, parse_mode='HTML', reply_markup=markup)
+        bot.send_photo(chat_id, photo, caption=text, parse_mode='HTML')
     time.sleep(3)
     bot.send_message(chat_id, "<b>Думай только сам! Спроси сам! Узнай сам! Реши сам! Как ты хочешь тут жить.</b>", parse_mode="HTML")
 
@@ -119,9 +142,63 @@ def handle_tools(message_or_query):
         chat_id = message_or_query.chat.id
     elif isinstance(message_or_query, telebot.types.CallbackQuery):
         chat_id = message_or_query.message.chat.id
-    text = "<b>Контактные данные</b>\n\nТелефон: +7 909 964 01 23\n<a href='https://t.me/conso27'>Telegram</a>\n<a href='https://vk.com/dunie'>ВК</a>\n<a href='https://dunie.press'>Сайт Дуние</a>\n<a href='https://www.youtube.com/@Dunie-2024'>Youtube</a>\n<a href='https://vc.ru/u/2959417-press-sluzhba-mbk-dunie'>VC.ru</a>\n<a href='https://mbkdunie.livejournal.com/profile/'>LiveJournal</a>\n<a href='https://dzen.ru/id/65d73d810feeaa2ff60f0260?utm_referrer=telegra.ph'>Яндекс дзен</a>\n<a href='mailto:adamadalzhol@gmail.com'>Email: adamadalzhol@gmail.com</a>\nEmail: 7928117@mail.ru"
-    bot.send_message(chat_id, text, parse_mode="HTML", reply_markup=markup)
-    # time.sleep(3)
+    text = "<b>Контактные данные</b>\n\nТелефон: +7 909 888 82 09\n<a href='https://t.me/conso27'>Telegram</a>\n<a href='https://vk.com/dunie'>ВК</a>\n<a href='https://dunie.press'>Сайт Дуние</a>\n<a href='https://www.youtube.com/@Dunie-2024'>Youtube</a>\nEmail: 7928117@mail.ru"
+    bot.send_message(chat_id, text, parse_mode="HTML")
+    time.sleep(3)
+
+
+
+@bot.callback_query_handler(func=lambda call: call.data == 'cvb_advantages')
+def handle_tools(message_or_query):
+    if isinstance(message_or_query, telebot.types.Message):
+        chat_id = message_or_query.chat.id
+    elif isinstance(message_or_query, telebot.types.CallbackQuery):
+        chat_id = message_or_query.message.chat.id
+    text = "<b>Преимущества</b>\n\nБез привязки к бирже CVB работает без привязки к кросс курсам, без привязки к мировым биржам\n\nСвобода от валютного контроля\n Беспрепятственные операции в любую точку мира, не подвергаясь валютному контролю\n\nВысокая скорость\nПрактически моментальное движение средств через CVB без блокировок и заморозок\n\nБез комиссий за транзакции\nCVB не взимает комиссии за транзакции и оплату за конвертацию\n\nCVB будет размещено только на государственных серверах, которое предоставляет техподдержку на территории этой страны"
+    bot.send_message(chat_id, text, parse_mode="HTML")
+
+
+@bot.callback_query_handler(func=lambda call: call.data == 'cvb_benefits')
+def handle_tools(message_or_query):
+    if isinstance(message_or_query, telebot.types.Message):
+        chat_id = message_or_query.chat.id
+    elif isinstance(message_or_query, telebot.types.CallbackQuery):
+        chat_id = message_or_query.message.chat.id
+    text = "<b>Польза:</b>\n\nCVB для народа и для человека\n\nЭто низкие цены на всё необходимое для жизни:\nпродукты питания, жилье, автомобили, одежду, коммунальные и другие услуги. В любом секторе, где человек будет использовать для оплаты CVB цена снизится от 50 до 80%\n\nCVB для государства\nИмея высокий оборот местной валюты, экономика будет расти, государство будет иметь большую привлекательность, как для инвесторов, так и для всех фондов мира и финансовых институтов.\n\n• CVB для бизнеса и финансовых институтов\nЧерез CVB бизнес может осуществлять любые сделки, заключать любые контракты с кем угодно в рамках закона\n\nЛюбое перечисление и перевод средств через CVB, будет проходить и поступать клиенту, также быстро и безболезненно, как смс через любой мессенджер или чат \n\n📣Девиз продукта: Нет больше финансовых границ!"
+    bot.send_message(chat_id, text, parse_mode="HTML")
+
+messages_to_send = [
+    "Сообщение 1",
+    "Сообщение 2",
+    "Сообщение 3"
+]
+user_id = None
+
+def send_message_to_user():
+    global user_id
+    if messages_to_send:
+        message_text = messages_to_send.pop(0)  # Извлекаем первое сообщение из списка
+        bot.send_message(user_id, message_text)
+    else:
+        # Если список пуст, то снова наполняем его
+        messages_to_send.extend([
+            "Сообщение 1",
+            "Сообщение 2",
+            "Сообщение 3"
+        ])
+        
+schedule.every().minute.do(send_message_to_user)  
+
+# Функция для запуска расписания
+# def run_schedule():
+#     while True:
+#         schedule.run_pending()
+#         time.sleep(5)
+
+# # Запуск расписания в отдельном потоке
+# import threading
+# threading.Thread(target=run_schedule).start()
+
 
 
 # Обработчик для кнопки "Юридический Каркас"
@@ -136,21 +213,9 @@ def handle_tools(message_or_query):
     bot.send_message(chat_id, text, parse_mode="HTML", reply_markup=markup)
 
 
-# def send_reminder(message):
-#     # Здесь вы можете добавить код для отправки сообщения пользователям
-#     # В данном примере отправляем приветственное сообщение
-#     bot.send_message(message.chat.id, "Привет! Это напоминание от вашего бота.", disable_notification=True)
-
-# # Запускаем планировщик
-# def start_scheduler():
-#     while True:
-#         send_reminder()
-#         # Здесь вы можете указать интервал отправки сообщений (в секундах)
-#         time.sleep(86400)  # 86400 секунд = 24 часа
 
 
-# @bot.message_handler(func=lambda message: True)
-# def echo_message(message):
-#     bot.reply_to(message, message.text)
+
+
     
-bot.infinity_polling()
+bot.polling(none_stop=True, timeout=120)
