@@ -11,11 +11,11 @@ services:
     ports:
       - "8000:8000"
 
-  bot:
-    build:
-      context: .
-      dockerfile: ./bot/Dockerfile
-    container_name: bot_container
+  # bot:
+  #   build:
+  #     context: .
+  #     dockerfile: ./bot/Dockerfile
+  #   container_name: bot_container
   nginx:
     build: ./nginx
     volumes:
