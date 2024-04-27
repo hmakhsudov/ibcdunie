@@ -551,6 +551,13 @@ nav ul {
 }
 
 @media (min-width: 700px) {
+    .global_image{
+        height: 100%;
+    }
+    .global_image img{
+        height: 100%;
+        width: 600px;
+    }
     .rules {
         color: #000;
         margin-bottom: 166px;
@@ -629,6 +636,7 @@ nav ul {
         background-repeat: no-repeat;
     }
 
+
     .info__content {
         display: block;
     }
@@ -663,7 +671,7 @@ nav ul {
         height: 500px;
     }
     .whoami{
-        height: 920px !important;
+        height: 870x !important;
     }
     .info {
         background-color: #328692;
@@ -675,7 +683,7 @@ nav ul {
     .global{
         background-color: #328692;
         position: relative;
-        height: 750px;
+        height: 1200px;
         overflow: hidden;
     }
 
@@ -740,8 +748,13 @@ nav ul {
         top: 0;
     }
 
+    .whoami_image{
+        height: 100%;
+    }
+
     .whoami_image img{
-        height: 807px; /* чтобы текст не вылезал*/
+        width: 700px;
+        height: 100%;
     }
     .whoami_content-text{
         margin-top: 50px;
@@ -751,7 +764,7 @@ nav ul {
 
 @media (min-width: 700px) {
     .second_info{
-        height: 820px;
+        height: 1150px;
     }
     .problems {
         background-image: url(../img/problems.png);
@@ -1222,7 +1235,7 @@ nav ul {
     }
 
     .knowcansay__content {
-        width: 900px;
+        width: 1055px;
         text-align: center;
         margin: 0 auto;
     }
@@ -1290,7 +1303,7 @@ nav ul {
         background-image: url(../img/whoami_mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 710px;
+        height: 980px;
     }
 }
 
