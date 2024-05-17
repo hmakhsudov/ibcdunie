@@ -1,0 +1,947 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunie</title>
+    <!-- Подключение стилей Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <section class="intro">
+        
+        <div class="container">
+            <div class="language__wrapper">
+                <ul class="language__options">
+                    <li><img src="{% static 'img/lang.svg' %}" alt=""><a href="{% url 'index' %}">Russian</a></li>
+                </ul>
+            </div>
+            <h2>International group of companies MBC Dunie and LLC Adam Adal Zhol is an investment-commercial entity
+                with a charitable focus (abbreviated as International group of companies Adam Adal Zhol and MBC Dunie).
+            </h2>
+            <div class="intro__logos">
+                <div class="intro__logo">
+                    <div class="intro__logo-text">MBC DUNIE LOGO</div>
+                    <div class="intro__logo-img">
+                        <img src="{% static 'img/logo.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="intro__logo">
+                    <div class="intro__logo-text">Adam Adal Zhol LOGO</div>
+                    <div class="intro__logo-img">
+                        <img src="{% static 'img/logo/logo_adam.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav__left">
+                    <li><button>DEFINITION</button></li>
+                    <li><button>GOALS AND OBJECTIVES</button></li>
+                    <li><button>PRINCIPLES AND VALUES</button></li>
+                </ul>
+                <ul class="nav__right">
+                    <li><button>PLANS</button></li>
+                    <li><button>RESULTS</button></li>
+                    <li><button>CONTACTS</button></li>
+                </ul>
+            </nav>
+            <div class="header__content">
+                <!-- <div class="header__dunie-text" style="text-align: center;">
+                    <img src="{% static 'img/dunie-text.svg' %}" alt="">
+                </div> -->
+                <h1>First positive planetary movement</h1>
+
+                <!-- <div class="header__banner">
+                </div> -->
+                <div class="header__text">
+
+                    MBC "DUNIE" is an international non-profit, membership-based, charitable organization created on the
+                    voluntary association of citizens, individuals, and/or legal entities based on the principles of
+                    purity, equality, preservation, and protection of all, living and non-living, of all humanity, the
+                    animal world, ecological life improvement, and the planet, for the benefit of humanity, humaneness,
+                    human family, living and non-living beings, justice, and universal peace, constructive cooperation,
+                    assistance, and interaction of humanity, citizens, peoples, population, nation, all states and
+                    non-states, republics and non-republics, monarchies and non-monarchies, religious and non-religious,
+                    denominations and non-denominations, governmental and non-governmental, communities, memberships,
+                    organizations.
+                    <br>
+                    <br>
+
+                    The activities of MBC "DUNIE" are based on civil rights and democratic principles, ensuring respect
+                    for human dignity and contributing to the achievement of understanding, cooperation, and lasting
+                    peace among nations.
+                    <br>
+                    <br>
+                    To maintain universal trust, MBC "DUNIE" cannot take sides in armed conflicts or engage in disputes
+                    of a political, racial, religious, or ideological nature.
+                    <br>
+                    <br>
+                    MBC "DUNIE" contributes to the establishment of lasting peace, which is considered not only as the
+                    absence of war but as a dynamic process of cooperation among all states and peoples, cooperation
+                    based on respect for freedom, independence, state sovereignty, equality, balance, and human rights,
+                    as well as on the fair distribution of resources to meet the needs of all humanity.
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="small-container">
+            <h2>The goals and objectives of the first positive planetary movement are for the benefit of all.</h2>
+            <div class="goals__content slick-slider">
+                <div class="goals__item">
+                    <img src="{% static 'img/goals-element.png' %}" alt="">
+                    <div class="goals__text">Harmonization of human health and well-being</div>
+                </div>
+
+
+                <div class="goals__item">
+                    <img src="{% static 'img/goals-element2.png' %}" alt="">
+                    <div class="goals__text">Living. Rationally and in balance, harmony - our message to humanity</div>
+                </div>
+
+
+
+                <div class="goals__item">
+                    <img src="{% static 'img/goals-element3.png' %}" alt="">
+                    <div class="goals__text">Changing the health of individuals and humanity to 100% of the full norm
+                    </div>
+                </div>
+
+
+                <div class="goals__item">
+                    <img src="{% static 'img/goals-element4.png' %}" alt="">
+                    <div class="goals__text">Creation for all, everything, everyone and everything living and
+                        non-living. Plant and animal world</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="rules">
+        <div class="container">
+            <h2>
+                Key principles and values
+            </h2>
+            <div class="rules__content">
+                <div class="rules__content-image">
+                </div>
+                <div class="rules__content-text">
+                    <div class="rules__content-item">
+                        <h3 class="rules__text-title">Solidarity</h3>
+                        <div class="rules__text-description">We believe in solidarity and mutual assistance, in shared
+                            responsibility for future generations and our planet.</div>
+                    </div>
+                    <div class="rules__content-item">
+                        <h3 class="rules__text-title">Justice</h3>
+                        <div class="rules__text-description">We strive to create a just society where people are not
+                            limited by inequality, discrimination, and exploitation.</div>
+                    </div>
+                    <div class="rules__content-item">
+                        <h3 class="rules__text-title">Innovation</h3>
+                        <div class="rules__text-description">We seek new ideas and solutions to transform systems and
+                            processes into more breakthrough noospheric, nature-like, environmentally sustainable ones.
+                        </div>
+                    </div>
+                    <div class="rules__content-item">
+                        <h3 class="rules__text-title">Let's eliminate from life</h3>
+                        <div class="rules__text-description">Pain, fear, distortions. We have solutions on how to stop
+                            wars, diseases, remove all debt burden of loans on the planet, both from states and
+                            individuals.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cvb">
+        <div class="container">
+            <h2>CVB</h2>
+            <h3> "Converted Virtual Balance"</h3>
+            <div class="look__content cvb__content">
+                <div class="look__content-text">
+                    <p>What is <span>CVB</span> and what does it provide for all, everything, everyone, nations,
+                        humanity, states, businesses, and yourselves?</p>
+
+                    <p><span>First</span>, it is software that allows you to convert any currency in the world without
+                        being tied to any exchange, without being tied to any cross rate, without financial losses.</p>
+                    <p><span>Secondly,</span> it is a solution for all sectors of the economy and in human life,
+                        including any transactions.</p>
+                    <p><span>What will CVB give:</span>
+                    </p>
+                    <p>It is reducing financial dependence on external regulators, gradually moving away from external
+                        financial influences, getting out of various debt pits and obligations, both for the state
+                        itself and for humanity. </p>
+                    <p>And also - the opportunity to have low stable prices for all goods and services by paying through
+                        the CVB system.</p>
+                    <p><span>Attention:</span></p>
+                    <p>We will get the <span>LOWEST prices</span> on everything necessary for life: </p>
+                    <p>Such as - food, housing, cars, clothing, utilities, and any other services. </p>
+                    <p>In every sector of the economy where people will use the CVB system for payment - the price will
+                        decrease by 50 to 80%.
+                    </p>
+
+                    <p> <span>Payment through CVB will reduce the indebtedness of the entire population.</span>
+                    </p>
+                    <p> Using the CVB product for any financial transfers, transactions in the CVB system - you
+                        are absolutely protected from any possibility of blocking or freezing your funds, whether
+                        funds of any legal entity or individual in any country in the world.</p>
+                    <p> No more
+                        crisis, conflict and other influence of politics on the economy - will not affect you or your
+                        companies or
+                        your projects or your deals.</p>
+
+                </div>
+
+
+
+                <div class="look__content-subtitle">
+
+                    Product motto:
+                    No more financial borders!
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="graphics">
+        <img src="{% static 'img/graphics/plane.gif' %}" alt="">
+    </div>
+    <section class="info cvb-business">
+        <div class="container">
+            <div class="info__content cvb-business__content">
+                <div class="info__content-text cvb-business-text">
+                    <h2>CVB for You and Your Legal Entities:</h2>
+                    <p>The moment has come today when the solution to all your financial questions comes into your
+                        hands.
+                    </p>
+                    <p>For example, through CVB, businesses can conduct any transactions, enter into any contracts with
+                        anyone within the framework of the law, and legislation of all countries.
+                    </p>
+                    <p>Any transfer and remittance of funds through CVB will be processed and received by the client as
+                        quickly and seamlessly as an SMS through any messenger or chat.
+                    </p>
+                    <p>It should be clear to you, openly understandable, what an important role this system plays.
+                    </p>
+                    <p>In any country, this software will be provided, functioning with the participation of the state,
+                        and only the state will be the main holder of the entire CVB system in its country.
+                    </p>
+                    <p>The owners of CVB are MBC Dunie and Adam Adal Zhol Group of Companies.
+                    </p>
+                    <p>In the case of a state operating in the CVB system, any state does not need to purchase other
+                        currencies to ensure the stability of its own currency, there is no economic decline, no
+                        depreciation of local products, goods, services
+                    </p>
+                    <p>CVB solves all these tasks!</p>
+                    <p>You solve these tasks - easily and calmly - by registering in the system through the most
+                        ordinary PC or mobile phone in the most ordinary application, which you will download from the
+                        App Store, Google Play, Huawei AppGallery.</p>
+                    <p>In our case - no fees for the movement of your funds through our converter - NO!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cvb advantages_cvb">
+        <div class="container">
+            <h3 style="margin-bottom: 15px;">This text is a preview of the advantages and the market entry of a new
+                virtual product for the movement of financial resources and goods worldwide - without borders! </h3>
+            <h2>Name: CVB <br> ("Converted Virtual Balance")</h2>
+
+            <div class="look__content">
+                <div class="look__content-text">
+                    <p>Form: IT product, mobile application for PC and all types of gadgets. </p>
+                    <p>In Russian, the name is translated as: </p>
+                    <p><span>Convertable virtual balance</span></p>
+                    <p>It's a financial service, apparently more accurately described as a converter - for the free
+                        movement of money around the world.
+                    </p>
+                    <p><span>Parameters, characteristics, properties, and advantages.</span></p>
+                    <p><span>Note: nothing like this exists in the world!!!</span></p>
+                    <p>So:</p>
+                    <p>1. Without reference to cross rates of world currencies. <br> <br>
+                        2. No exchange controls. <br> <br>
+                        3. Without reference to world exchanges.<br> <br>
+                        4. No blocking. <br> <br>
+                        5. No frost. <br> <br>
+                        6. ⁠System for trading transactions of any level and qualification.<br> <br>
+                        7. For any amount of money <br> <br>
+                        8. In any currency <br> <br>
+                        9. From anywhere in the world to anywhere in the world. <br> <br>
+                        10. ⁠For legal entities and individuals; doesn't matter. <br> <br>
+                        11. Easy to perform. Intuitive. Several levels: from simple, for ordinary people
+                        everyday issues to complex, servicing large government. corporations and businesses manually.
+                        <br> <br>
+                        12. Our top managers and/or general directors and/or chairmen of the board will be ready
+                        advise and carry out transactions directly following your formal written requests
+                        to our email address: adamadalzhol@gmail.com (copy: 7928117@mail.ru) <br> <br>
+                        13. When our organization makes a decision based on your official requests, letters to our
+                        address, at the first meeting we sign agreements (NDA and framework agreement on cooperation).
+                        Then we discuss
+                        process and procedures, then you get a guaranteed solution and roadmap. On exit
+                        CVB systems to the Internet - this functionality will work automatically.<br> <br>
+                        14. You can move any types and classifications of funds, including investment funds.
+                        <br> <br>
+                        15. Convertible virtual balance - abbreviated in English - CVB - is a financial is definitely
+                        not a service: neither money, nor a payment system, nor crypto.<br> <br>
+                        16. In this system you work only legally, since first of all the CVB operates in
+                        cooperation with each state, and you move any funds and assets.<br> <br>
+                        17. The converter does not charge anything for transactions. <br> <br>
+                        18. Software location - on state servers; technical support is provided by an authorized
+                        company from their state. <br> <br>
+                        19.
+                        CVB is a financial service. It does not affect legal, economic, political and for any other
+                        actions to make decisions by the buyer and seller about the composition, structure and TP in
+                        transactions. CVB is a converter in the form of a mobile application. <br> <br>
+                        20. The CVB system gives the action: make payments. When purchasing absolutely all goods in the
+                        world (from
+                        combs to gasoline and cars/apartments/earth and its subsoil, gold and spaceships), with
+                        guaranteed automatic discount of 50%.<br><br>
+                        21. In this case, the seller receives 100% of the price, but the buyer saves 50%. This is
+                        essential
+                        You will feel the advantage at the first stage of project development. From the moment the CVB
+                        system comes out
+                        on the Internet, and the entire project will enter the next phase of development, we will be
+                        able to offer
+                        discounting on a number of transactions up to 80%. <br><br>
+                        22. Thus, at the moment in the world you can buy everything for half the price by paying through
+                        CVB system. <br><br>
+                        23. The CVB system gives the action: make payments. When purchasing absolutely all goods in the
+                        world (from
+                        combs to gasoline and cars/apartments/earth and its subsoil, gold and spaceships), with
+                        guaranteed automatic discount of 50%. <br><br>
+                        24. Warning: This is legal. In cooperation with each state, accordingly with its
+                        services. But not a single existing state system, including banking, financial -
+                        will not be harmed. This product does not lead to conflicts.<br><br>
+                        25. The first example: from the moment a person learns information about CVB, its benefits and
+                        opportunities, everyone will be able to instantly make a decision and, for example, improve
+                        their life
+                        conditions, since in this case, with your budget, without loans, you can purchase everything
+                        that costs
+                        2 times more expensive. <br><br>
+                        26. Second example: what is necessary for a person’s life can be paid for anywhere in the world
+                        at home
+                        currency: food, clothing, equipment, a large family trip, taxes and any service: medicine,
+                        education, housing and communal services, transport and logistics operations, legal consulting
+                        and others.
+                        <br><br>
+                        27. Any person who has a gadget or PC, using it in any situation and in any country
+                        peace; having a personal account in any bank convenient for him (this is an online banking
+                        service - for example
+                        Sberbank, VTB, Tinkoff and/or where it is registered, in any banking application) - will be able
+                        your local currency and other currencies (rubles, yuan, euros, etc.) - transfer to the system in
+                        one click
+                        CVB. <br><br>
+                        28. And at will, the party receiving the money through the CVB system (seller) moves it to
+                        mobile application of the bank he uses. CVB is not a bank. <br><br>
+                        29. Payment using the CVB system can be made immediately to your payment address specified in
+                        the transaction
+                        account in any bank. <br><br>
+                        30. CVB has no restrictions on payment amounts or transaction volumes!!!
+                        <br><br>
+                        31. Our financial service accepts any currency in the world from all financial systems and sends
+                        free of charge to where you indicated in your phone, in your personal account. <br><br>
+                        32. The copyright holder is the international group of companies Adam Adal Zhol and MBK Dunie.
+                        <br><br>
+                        33. The IT company Septrillion LLC has effective rights to the CVB system.
+                        <br><br>
+                        34. Spring 2024 - product testing stage and going online <br><br>
+                        35. This product brings balance and rationality to the world.<br><br>
+                        36. Recognized and unrecognized territories, etc. also have access to the system. <br><br>
+                    </p>
+                    <p>
+                        Let us remind you: CVB is an IT application for a computer and any type of gadget - everyone can
+                        download it
+                        free, on sites:
+                    </p>
+                    <p>
+                    <ul>
+                        <li>- Google Play</li>
+                        <li>- App Store</li>
+                        <li>- Huawei AppGallery</li>
+                        <li>- RuStore</li>
+                        <li>- Samsumg Galaxy Store</li>
+                        <li>- Xiaomi GetApps</li>
+                    </ul>
+
+                    </p>
+
+                    <p> <span>Our motto</span>
+                    </p>
+                    <p><span>Now the world without financial borders!</span></p>
+                    <p></p>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="graphics">
+        <img src="{% static 'img/graphics/city.gif' %}" alt="" style="height: 550px;">
+    </section>
+    <section class="problems">
+        <div class="container">
+            <h2>Challenges and obstacles for the positive planetary movement:</h2>
+
+            <div class="problems__items">
+                <div class="problems__item">
+                    <h3 class="problems__item-title">Inertia and fear</h3>
+                    <div class="problems__item-description">Many people fear change, are afraid of the unknown and the
+                        near future, making it difficult to overcome inertia and start a positive planetary movement.
+                    </div>
+                </div>
+                <div class="problems__item">
+                    <h3 class="problems__item-title">Civil society</h3>
+                    <div class="problems__item-description">Civil society can influence those in power, make changes
+                        through local and international actions, and draw attention to the positive planetary movement.
+                    </div>
+                </div>
+                <div class="problems__item">
+                    <h3 class="problems__item-title">Scaling difficulties</h3>
+                    <div class="problems__item-description">Ideas and projects of the positive planetary movement often
+                        face scaling problems. It takes a lot of effort to achieve a significant and rational impact.
+                    </div>
+                </div>
+            </div>
+
+            <h2>Roles and responsibilities of participants:</h2>
+
+            <div class="problems__items">
+                <div class="problems__item">
+                    <h3 class="problems__item-title">Politicians</h3>
+                    <div class="problems__item-description">The responsibility of politicians is to develop and
+                        implement laws and initiatives that contribute to the positive movement and ensure the rights
+                        and well-being of all people.
+                    </div>
+                </div>
+
+                <div class="problems__item">
+                    <h3 class="problems__item-title">Business</h3>
+                    <div class="problems__item-description">Business can adopt responsible behavior, invest in
+                        sustainable and innovative solutions, and help create equal opportunities for all.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info second_info">
+        <div class="container">
+            <div class="info__content second_content">
+                <div class="info__image second_image">
+                    <img src="{% static 'img/info-banner22.png' %}" alt="">
+                </div>
+                <div class="info__content-text second_content-text spendings_content-text">
+                    <div class="second__content-text-title">Below is a preview of the text about the second IT product
+                        from our group of companies - an electronic-digital platform above all platforms.
+                        The platform is currently in the development stage. It is being executed under the commission of
+                        MBC Dunie. This product will bring significant benefits to individuals and all countries, as
+                        well as the global business community. We will provide more details about its functionalities
+                        later. </div>
+                    <p>For now, it can be stated that all revenues generated by the platform will go towards the
+                        construction of unique innovative cities, where peace, tranquility, justice, love, purposeful
+                        work, and remuneration based on labor will prevail. These cities will offer universal access to
+                        knowledge, deep education from an early age without pressure, demands, distortions, etc.
+                        Additionally, revenues from the platform's operations will contribute to the establishment of
+                        large-scale industrial facilities for the production of noospheric, nature-like, eco-friendly,
+                        breakthrough, and futuristic goods, commodities, household items, medicine, and food -
+                        everything designed solely for the benefit of humanity and the ecosystem. This will lead to the
+                        activation of regeneration and self-recovery mechanisms, rejuvenation, and balance both
+                        internally and externally.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="graphics">
+        <img src="{% static 'img/graphics/room.jpg' %}" alt="">
+    </section>
+
+    <section class="info need">
+        <div class="container">
+            <div class="info__content">
+                <div class="info__content-text need__content-text">
+
+                    <p>Ordinary people on the planet - individuals with clean money living from paycheck to paycheck or
+                        on modest incomes and dividends - will be able to use the CVB mobile application for free in
+                        their national currency. The platform will enable trading, purchasing, and moving goods and
+                        services with significant discounts, among other features which we will unveil to the public
+                        later. People will be able to use both the mobile application and the platform for their
+                        personal and professional needs. You can use the software for ordinary household items for free
+                        and in your national currency. They will be able to use it for everyday purchases, such as
+                        paying for education, healthcare, utilities, etc., without worrying about currency exchange
+                        rates, stock exchanges, or conversions. They can use their local currency, the one they were
+                        born with and currently use!</p>
+                    <p> Does it sound like science fiction? No, it's the near future that is about to arrive. We've only
+                        just begun to move forward, and our impact will soon be visible on the planet! Let's not just
+                        talk about trust and fairness; these are excellent qualities, but in actions, we must work
+                        together in one direction, without unnecessary talk, not just for ourselves, taking away
+                        something from others. Let's demonstrate our commitment to these values, goals, and tasks
+                        through action.</p>
+                    <p>Seems fantastic? No, this is the near future, which is about to arrive. We've only just begun
+                        move
+                        forward and our manifestation will soon be visible on the planet!</p>
+                    <p> Let's not talk about trust and
+                        justice, these are excellent qualities, but in business we must work together in one direction,
+                        without
+                        unnecessary conversations, and not just for yourself, taking at least something from others. And
+                        prove yours with deeds
+                        commitment to these meanings, goals and objectives.</p>
+                    <p>The positive planetary movement differs from all other movements in the world - it is truly the
+                        first, positive, and planetary movement, without any entrance fees, payments, burdens,
+                        degradation, or destruction. It is a public movement; we do not engage in politics!</p>
+                    <p class="need__content-subtitle"><span> The movement is necessary for humanity!</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="info__image">
+            <img src="{% static 'img/need.png' %}" alt="">
+        </div>
+    </section>
+
+    <section class="rules newcities">
+        <div class="container">
+            <h2 class="newcities__title">
+                In transitional and innovative cities
+            </h2>
+            <div class="rules__content newcities__content">
+                <div class="rules__content-image newcities-image">
+                </div>
+                <div class="rules__content-text newcities__content-text">
+
+                    <p> we will provide parents with the opportunity to spend time together, loving, knowing, seeing,
+                        and raising all their children without the burden of responsibilities.</p>
+                    <p>Of course, we will also care for the adult generation who will thrive in these cities. Such
+                        fantastic statements can only be achieved through breakthrough nature-like technologies, with
+                        noospheric thinking, utilizing all inventions, developments, and technologies on the planet for
+                        the benefit of humanity and the Earth itself.</p>
+                    <p class="newcities__content-subtitle">It is our shared home!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="knowcansay">
+        <div class="container">
+            <div class="knowcansay__content">
+                <h2>"I KNOW, I CAN, I WILL" - If you decide and are ready, then you will do it for yourself and for
+                    Humanity</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="info second_info onlyyou ">
+        <div class="container">
+            <div class="info__image second_image">
+                <img src="{% static 'img/onlyyou.png' %}" alt="">
+            </div>
+            <div class="info__content onlyyou__content second_content">
+                <div class="info__content-text onlyyou__content-text ">
+                    Only YOU can do it, it depends on YOU alone. Only YOUR decisions and actions in everything will
+                    lead, as the song goes, to whether there will be harmony in the house or its absence due to your
+                    inaction.
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="press">
+        <div class="container">
+            <h2>Press service:</h2>
+
+            <div class="press__text">
+                <p>People will bring information to people in any scenario. I am ready, on behalf of the entire team and
+                    group of our companies, to provide information that we have a Solution for every situation on the
+                    planet.</p>
+                <p>- What does this mean? <br>
+                    - Ask questions - answers exist!</p>
+                <p>In the meantime, don’t expect an answer since you didn’t ask the question, but at least
+                    move according to your purpose. Today we can be especially useful to people, and of course
+                    legal entities in any
+                    sector
+                    economy. At the same time, we, ordinary people, are now called individuals - having learned,
+                    understood, you
+                    try it and get benefits, benefit and relief using our CVB product. You are all as one
+                    you can make a decision.
+                    By yourself, by your own free will, choose what you need.
+                    Word of mouth cannot be canceled. The CVB system improves the quality of life for everyone, both us
+                    and me - for sure
+                    Also</p>
+            </div>
+        </div>
+    </section>
+    <section class="graphics">
+        <img src="{% static 'img/graphics/tree.gif' %}" alt="" style="height: 350px">
+    </section>
+    <section class="info global">
+        <div class="container">
+            <div class="info__content second_content global_content">
+                <div class="info__image second_image global_image">
+                    <img src="{% static 'img/info-banner.png' %}" alt="">
+                </div>
+                <div class="info__content-text second_content-text global_content-text">
+                    <p class="global-title">
+                        Positive planetary movement Dunie and LIVING roadmap:
+                    </p>
+                    <p>
+                        Traffic and Road Map (ZhK) are manifested by legal entities with the same name and the same
+                        charters, within the framework of which all Activities are conducted throughout the planet, in
+                        all countries of the world.
+                        <br>Our companies: "MBK Dunie" and LLC "Adam Adal Zhol investment and commercial
+                        charitable bias" are represented in the Russian Federation, Kyrgyzstan, Kazakhstan, Canada,
+                        Moldova, India, Turkey. In the near future we are planning Belarus, Republika Srpska, America,
+                        Austria, Hungary. At the moment, in principle, the process of registration and building
+                        relationships with
+                        all countries of the world, and now our two companies are registered in more than 90 countries
+                        <br>
+                        <br>A group of companies works FOR THE GOOD OF HUMANITY, including we are engaged in
+                        educational,
+                        educational and medical, trade and purchasing, construction, public and all other
+                        activities. We have a social, community and global group building program.
+                        <br><br>The group of companies is the customer of the most breakthrough and ahead of time
+                        products.
+                        The exclusive executor of the group's orders is Septrilion LLC. We bring the system to market
+                        CVB, we are preparing to enter the Platform of Platforms market. Wait for other previously
+                        non-existent software
+                        products.<br><br>
+                        p.s <b>Please note that no one in the whole world has ever had such a CVB system, and
+                            will not</b>
+                        <br>
+                        CVB mobile application - figure it out, use it, and live in peace
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="knowcansay nopolitics">
+        <div class="container">
+            <div class="knowcansay__content nopolitics__content video__content">
+                <h2 style="margin-bottom: 20px;"><span>Video reports on the efforts of the Press Service and team
+                        members. </span></h2>
+                <p>We are pleased to meet you!</p>
+                <p>We intend to reflect the actions of our team based on the formula: </p>
+                <p>"What I say, I do." </p>
+                <p>Based on the principles of:</p>
+                <p>Respect and mutual understanding </p>
+                <p>We live with a readiness to acquire knowledge and a full responsibility to provide knowledge and
+                    understanding about the world and how it works.</p>
+                <p>Below is a video: (06.12.2023):</p>
+                <iframe class="iframe" src="https://www.youtube.com/embed/nyIJ25wXCDU?si=5wQ1CvAMmBVXH0FX"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="knowcansay phrase">
+        <div class="container">
+            <div class="knowcansay__content">
+                <h2>The motto <br>of the international group of companies Adam Adal Zhol and MBC Dunie <br>is
+                    simple<br><span>We bring Purity.<br> We speak the truth. <br>And truthfulness in our actions.</span>
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="info second_info whoami">
+        <div class="container">
+            <div class="info__content second_content">
+                <div class="info__image second_image whoami_image">
+                    <img src="{% static 'img/whoami_banner.jpg' %}" alt="">
+                </div>
+                <div class="info__content-text second_content-text whoami_content-text">
+                    <p>Working for the benefit of humanity <b>is the philosophy of our group of companies</b><br>
+                        I do not have the right to judge who is right, who is wrong; who is evil, who is good. There is
+                        no
+                        evil, no good; nothing bad, nothing good - there is all of us, the consciousness of all - this
+                        is the LIVING
+                        roadmap.<br><br> I act according to my purpose.<br><br>
+                        I will convey information about the LRM to each of you. Each of you will figure out how
+                        everything
+                        is arranged and make a choice for yourself: how to live in this and with this.
+                        <br><br>You cannot take away the growth of a flower. You cannot take away the movement of
+                        information.
+                        <br>
+                        Whoever owns the information owns the world. <br><br>We want to pass on knowledge on every topic
+                        of
+                        human life on the planet, in our common society - for free, and for those who want it. We do not
+                        force anyone, we do not involve anyone, we give - you either take it or pass by and live as you
+                        lived. <br>We
+                        declare because we know, we can explain, we can show, we will show that - there is a SOLUTION
+                        for every situation on planet Earth and we want to ELIMINATE from everyone's life:
+                        wars, troubles, fears, sufferings, humiliations, negativity, indebtedness, hunger, abortions,
+                        violence,
+                        inequality, slavery.<br>We know how to do it. Accept the information, listen to us.<br>
+                        Right now we are creating an information field for the launch of our project and many IT
+                        products into
+                        the world and into the light: that is, into the space of the internet network, social networks,
+                        and into the general social life for
+                        applicability by all people in all countries of the world. <br><br>
+                        We are glad that we were born in our country, were able to figure out how the world is arranged,
+                        accepted the knowledge, and now we are bringing it to you, to the world, and that Russia can
+                        become the locomotive of this movement
+                        on
+                        the planet. <br>Please actively engage, try to read any information to the end, including on
+                        this site and all our articles in all media, starting with "Regions of Russia", and everywhere
+                        you encounter information about the Living Roadmap <br>
+                        Do not miss out<br>
+                        Do not miss your chance to be at the forefront of these wonderful, newest, breakthrough, and
+                        advanced
+                        events, significantly transforming all of us for ALL FOR ALL FOR EVERYONE AND EVERYTHING.
+                        <br><br>
+                        Partner and GR of the international group of companies Adam Adal Zhol and MBK Dunie; General
+                        Director and
+                        Beneficiary of LLC Septrillion (an IT development company) a company holding effective rights to
+                        the CVB system <br>
+                        <br><a href="https://telegra.ph/O-Levshinoj-Svetlane-Nikolaevne-11-08"
+                            style="color: #Fff; text-decoration: underline;">Svetlana Nikolaevna Levshina</a>
+                        <br><br>April 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="graphics">
+        <img src="{% static 'img/graphics/woman.jpg' %}" alt="">
+    </section>
+    <section class="look thanks">
+        <div class="container">
+            <h2>Philosophy, History of Development
+                of the LIVING Roadmap, Manifested
+                by the Adam Adal Zhol Group of Companies and MBK Dunie</h2>
+            <div class="look__content thanks__content">
+                <div class="look__content-text thanks__content-text">
+                    <p>It will be recorded in this block as our website updates.</p>
+                    <p>We thank our
+                        shareholders, founders, and affiliated companies of the Group of Companies</p>
+                    <p>for their utmost cooperation with our project for the sake of all humanity.</p>
+                    <p><span>Thank you:</span></p>
+                    <p>1. MPK Universum</p>
+                    <p>2. LLC Septrillion</p>
+                    <p>3. International non-governmental organization in the form of Association - International Agency
+                        of Public Security (AIAPS)<br><br>
+                        INTERNATIONAL AGENCY OF PUBLIC SECURITY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="graphics">
+        <img src="{% static 'img/graphics/naturewoman.gif' %}" alt="" style="height: 200px;">
+    </section>
+    <section class="cvb advantages_cvb">
+        <div class="container">
+            <h2>Please pay attention to the structure of our group!</h2><br>
+            <h3>So, in every country in the world, we open 2 companies:</h3>
+            <div class="look__content">
+                <div class="look__content-text">
+                    <p><span>"MBK Dunie"</span> is responsible for the main direction of activity and is a
+                        non-commercial enterprise.</p>
+                    <p><span>LLC "Adam Adal Zhol Investment-Commercial with a Charitable Inclination"</span> carries the
+                        commercial component of the entire project.</p>
+                    <p>The main essence of the activity of the entire group is laid down in the Charter of MBK Dunie.
+                        This charter is translated verbatim into the official language of the country where the next
+                        registration takes place, thus our activities around the world are regulated by our charter and
+                        we do exactly what is specified in it. This is a principled position of our international group
+                        of companies.</p>
+                    <p>The entire project is called:</p>
+                    <p><span>THE LIVING Roadmap,</span></p>
+                    <p>which includes as a component</p>
+                    <p><span>The Positive Planetary Movement Dunie.</span></p>
+                    <p>Please note that our group of companies does not have a vector of conducting charitable
+                        activities in our development, but we work with a charitable inclination.</p>
+                    <p><span>What does this mean?<br><br>Specifically:</span></p>
+                    <p>Deep social activity and charitable assistance for people and nations in all sectors of the
+                        everyday life of any person around the world. Charitable assistance means providing a job or
+                        creating conditions for a person to create a job, as a small entrepreneur, as an individual
+                        entrepreneur, as self-employed. We definitely help with implementation, including being a direct
+                        customer of the services that people open using our help.</p>
+                    <p>By order of the international group of companies Adam Adal Zhol and MBK Dunie, the multi-profile
+                        company LLC Septrillion, which is also an IT company, performs a number of tasks, conducts
+                        events, and releases various software products. In the spring of 2024, the CVB system will be
+                        launched on the internet. LLC Septrillion holds effective rights to CVB.</p>
+                    <p>The Association "International Agency of Public Security" (AIAPS), UN, Switzerland is a partner
+                        in the legal activities of our group.</p>
+                    <p>Based on the signed agreement, the Association conducts and will conduct accompanying actions for
+                        the correct registration of our company in countries around the world; it also conducts
+                        registration and patent work, securing legal rights to all inventions, technologies, and
+                        developments, including those ahead of their time, to secure rights under the laws of each
+                        country in the world.</p>
+                    <p>Many companies are shareholders of MBK Dunie, the list is confidential and therefore disclosure
+                        of data is possible only by personal order of the company owners.</p>
+                </div>
+                <div class="look__content-subtitle">
+                    Sincerely,
+                    the team of THE LIVING Roadmap.<br><br>
+                    Moscow, February 2024
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="future look">
+        <div class="container">
+            <div class="future__content look__content">
+                <div class="future__text">
+                    <div class="future__text-title look__content-text">
+                        <h2>The future of positive planetary movement</h2>
+                    </div>
+                    <br>
+
+                    <p> Today's and future home of ours, the common ship - planet Earth - depends solely on all of us,
+                        on Man and Humanity!</p>
+
+
+
+                    <p>What is our Vision of the Future?</p>
+
+
+
+                    The Positive Planetary Movement within the framework of the LIVING roadmap provides solutions for
+                    absolutely all issues and situations on planet Earth, no matter how fantastic it may sound, but
+                    that's exactly how it is. The press service statement is always taken into account. And we work
+                    according to our own desire and decision with soul - for everyone, everything, and according to our
+                    Charter, registered in a single text in all countries of the planet.
+                    <br>
+                    <br>
+
+                    Think for yourself! Ask yourself! Find out for yourself! Decide for yourself! How do you want to
+                    live here?
+                    <br>
+                    <br>
+
+                    Man, know that creation + technology = LIFE of Man in the common house and in our cosmic ship named
+                    planet Earth!
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+
+
+            <div class="footer__form">
+                <div class="form__text">Subscribe to the <span>mailing list</span></div>
+                <div class="form__form">
+                    <form action="">
+                        <input type="text" placeholder="Введите вашу почту">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__telegram">
+                <h2>CVB mobile application - figure it out, use it, and live in peace</h2>
+
+                <div class="footer__telegram-links">
+                    <div class="footer__telegram-link">
+                        <a href="https://t.me/pozitiv_dunie"><img src="{% static 'img/qr/qr1.png' %}" alt=""></a>
+                    </div>
+                    <div class="footer__telegram-link">
+                        <a href="https://t.me/Image_of_the_future_5_6"><img src="{% static 'img/qr/qr2.png' %}"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contacts">
+
+                <div class="footer__left">
+                    <ul>
+                        <li><a href="tel:+79098888209">Call center: +7 909 888 82 09</a></li>
+                        <li><a href="https://ibcdunie.com">Wwbsite Dunie ( ibcdunie.com )</a></li>
+                        <li><a href="https://t.me/conso27">Telegram</a></li>
+                        <li><a href="https://dzen.ru/id/65d73d810feeaa2ff60f0260?utm_referrer=telegra.ph">Yandex
+                                dzen</a></li>
+                        <li><a href="https://vc.ru/u/2959417-press-sluzhba-mbk-dunie">VC.ru</a></li>
+                        <li><a href="https://mbkdunie.livejournal.com/profile/">LiveJournal</a></li>
+                        <li><a href="https://vk.com/dunie">Vk</a></li>
+                        <li><a href="https://www.youtube.com/@Dunie-2024">YouTube channel</a></li>
+                        <li><a href="mailto:adamadalzhol@gmail.com">Email adamadalzhol@gmail.com</a></li>
+                        <li><a href="mailto:7928117@mail.ru">Email 7928117@mail.ru</a></li>
+                        <li><a href="https://cvb.center">Website CVB.center</a></li>
+                        <li><a href="https://telegra.ph/Rajder-01-07">Rider</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__copyright"><a
+                        href="https://telegra.ph/Reglament-kontaktov-i-vzaimootnoshenij-s-mezhdunarodnoj-gruppoj-03-21">Regulations
+                        relationships with the international group of companies AAZh and Dunie</a></div>
+                <div class="footer__copyright"><a
+                        href="https://telegra.ph/USTAV-Mezhdunarodnyj-Blago---KOOP-DUNIE-11-06">
+                        Legal
+                        information</a></div>
+                <div class="footer__copyright"><a href="https://rrmag.ru/" style="color: #0000EE;">
+                        We are in the Regions magazine
+                        Russia</a></div>
+                <div class="footer__policy">
+                    <ul>
+                        <li>2023 DUNIE. All rights reserved</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="graphics">
+            <img src="{% static 'img/footergif.gif' %}" alt="" style="height: auto; margin-bottom: 25px">
+            <div class="container" style="text-align: center;">
+
+                <h2 style="color: #000;">See you again!
+                </h2>
+            </div>
+
+        </section>
+        .
+    </footer>
+
+
+    <!-- Подключение скрипта Slick Slider JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            if ($(window).width() < 500) { // Проверка ширины экрана для мобильных устройств
+                $('.goals__content.slick-slider').slick({
+                    slidesToShow: 1, // Количество отображаемых слайдов
+                    slidesToScroll: 1, // Количество прокручиваемых слайдов
+                    autoplay: true, // Автоматическая прокрутка
+                    autoplaySpeed: 3000 // Скорость автоматической прокрутки в миллисекундах
+                    // Другие настройки слайдера можно добавить по необходимости
+                });
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

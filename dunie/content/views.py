@@ -45,3 +45,6 @@ def format_user_entries(user_visits):
 
 def index(request):
     return render(request, 'index.html')
+
+def indexenglish(request):
+    return render(request, 'index_english.html')
