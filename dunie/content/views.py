@@ -1,7 +1,6 @@
 # views.py
 from django.shortcuts import render
 from .models import UserVisit
-
 def user_count(request):
     # Получаем общее количество записей в базе данных
     total_users = UserVisit.objects.count()
@@ -44,7 +43,10 @@ def format_user_entries(user_visits):
     return user_entries
 
 def index(request):
-    return render(request, 'index.html')
+    users = UserVisit.objects.all()
+    return render(request, 'index.html', context={
+        'users' : users
+    })
 
 def indexenglish(request):
     return render(request, 'index_english.html')
