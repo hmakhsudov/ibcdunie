@@ -242,7 +242,6 @@ button {
         background-color: rgba(248, 243, 243, 0.72);
         color: #000;
         padding-top: 30px;
-        padding-bottom: 40px;
     }
 
     .intro h2 {
@@ -1094,7 +1093,7 @@ nav ul {
         margin-left: 15px;
     }
     .need {
-        height: 675px;
+        height: 630px;
         margin-bottom: 35px;
         background-image: url(../img/need_mobile.png);
         background-size: cover;
@@ -1327,7 +1326,7 @@ nav ul {
     }
 
     .press__text {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 300;
     }
 
